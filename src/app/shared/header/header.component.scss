@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1f2626;
+    transition: color 0.5s ease;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
+}
+
+.menu-esquerda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-direita {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 1080px) {
+  header {
+  a {
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
+}
+}
+
+

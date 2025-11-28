@@ -1,0 +1,12 @@
+.corpo {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media (min-width: 1080px) {
+  .corpo {
+    padding: 0 62px;
+  }
+}

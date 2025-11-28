@@ -1,0 +1,22 @@
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(82, 34, 208, 1) 0%,
+    rgba(255, 97, 150, 1) 100%
+  );
+  background-size: 150% 170%;
+  background-position: left center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 500;
+  border: none;
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: background-position 1s ease;
+}
+
+.btn-primary:hover {
+  background-position: right center;
+  cursor: pointer;
+}
