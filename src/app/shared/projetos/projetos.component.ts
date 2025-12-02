@@ -9,4 +9,8 @@ import { CaixasProjetosComponent } from '../caixas-projetos/caixas-projetos.comp
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.scss',
 })
-export class ProjetosComponent {}
+export class ProjetosComponent {
+  openGithub() {
+  window.open('https://github.com/brenaolive', '_blank', 'noopener noreferrer');
+}
+}
