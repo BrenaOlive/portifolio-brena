@@ -1,18 +1,21 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Repository } from '../types/repository.interface';
 
 export const GITHUB_API_URL = 'https://api.github.com/users/BrenaOlive/repos';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GithubService {
+  httpClient = inject(HttpClient);
 
-  constructor(private httpClient: HttpClient) { }
+  getRepos(): Observable<Repository[]> {
+    return this.httpClient.get<Repository[]>(GITHUB_API_URL);
+  }
 
-  getRepos(): Observable<HttpResponse<Repository>> {
-    return this.httpClient.get<HttpResponse<Repository>>(GITHUB_API_URL);
+  getRepoLanguages(url: string): Observable<Repository> {
+    return this.httpClient.get<Repository>(url);
   }
 }

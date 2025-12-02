@@ -1,9 +1,11 @@
 <header>
-  <div class="menu-esquerda">
-    <a href="#corpo">Home</a>
-  </div>
-  <div class="menu-direita">
-    <a href="#projetos">Projetos</a>
-    <btn-primary text="Contato"></btn-primary>
+  <div class="menu">
+    <div class="menu-esquerda">
+      <a href="#corpo">Home</a>
+    </div>
+    <div class="menu-direita">
+      <a href="#projetos">Projetos</a>
+      <btn-primary (click)="scrollTo('contato')" text="Contato"></btn-primary>
+    </div>
   </div>
 </header>

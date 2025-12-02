@@ -8,10 +8,9 @@ describe('UpPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UpPageComponent]
-    })
-    .compileComponents();
-    
+      imports: [UpPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(UpPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

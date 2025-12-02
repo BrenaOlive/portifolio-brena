@@ -8,15 +8,21 @@
   background-position: left center;
   padding: 12px 20px;
   border-radius: 10px;
-  font-size: 500;
+  font-weight: 500;
   border: none;
   color: #fafafa;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   transition: background-position 1s ease;
 }
 
 .btn-primary:hover {
   background-position: right center;
   cursor: pointer;
+}
+
+@media (min-width: 1080px) {
+  .btn-primary {
+    font-size: 18px;
+  }
 }

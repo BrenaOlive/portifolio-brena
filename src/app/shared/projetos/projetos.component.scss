@@ -1,0 +1,40 @@
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+section .projetos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+section .projeto-caixa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+btn-primary {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1080px) {
+  section .projetos {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

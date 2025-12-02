@@ -1,0 +1,49 @@
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.corpo-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icones-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon-img:hover {
+  transform: translateY(-4px);
+}
+
+@media (min-width: 1080px) {
+  section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: 150px;
+  }
+  .icon-img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+}

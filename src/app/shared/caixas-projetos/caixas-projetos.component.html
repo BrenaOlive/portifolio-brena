@@ -1,0 +1,26 @@
+<div class="projects-list">
+  @for (repo of repos.slice(0, 6); track repo.name) {
+    <a
+      class="project-link"
+      href="{{ repo.html_url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="project-card">
+        <h3 class="project-title">{{ repo.name }}</h3>
+
+        <div class="tags">
+          @if (repo.languages) {
+            @for (lang of repo.languages; track $index) {
+              <span class="tag">{{ lang }}</span>
+            }
+          }
+        </div>
+
+        <p class="project-description">
+          {{ repo.description || "Sem descrição disponível." }}
+        </p>
+      </div>
+    </a>
+  }
+</div>

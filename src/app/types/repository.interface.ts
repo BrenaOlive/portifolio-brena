@@ -3,4 +3,5 @@ export interface Repository {
   description: string;
   html_url: string;
   languages_url: string;
+  languages?: string[];
 }

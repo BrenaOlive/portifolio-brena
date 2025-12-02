@@ -1,12 +1,15 @@
 .corpo {
   padding: 0 20px;
-  display: flex;
   flex-direction: column;
-  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 60px;
 }
 
 @media (min-width: 1080px) {
   .corpo {
-    padding: 0 62px;
+    padding: 0 150px;
+    gap: 120px;
   }
 }
