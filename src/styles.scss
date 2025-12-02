@@ -9,11 +9,10 @@ body {
 }
 
 .titulo {
+  margin-left: calc(-50vw + 50%);
+  padding: 20px;
   width: 100%;
   max-width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -29,6 +28,7 @@ html {
 
 @media (min-width: 1080px) {
   .titulo {
+    margin-left: calc(-50vw + 50%);
     padding-left: 150px;
     font-size: 36px;
   }

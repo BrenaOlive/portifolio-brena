@@ -11,6 +11,8 @@ header .menu {
   justify-content: space-between;
   height: 70px;
   background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
 
 header .menu a {
