@@ -12,7 +12,7 @@ import { NgOptimizedImage } from '@angular/common';
 export class MainSectionComponent {
   downloadCurriculo() {
     const link = document.createElement('a');
-    link.href = 'assets/Curriculo-Brena.pdf';
+    link.href = 'assets/curriculo.pdf';
     link.download = 'Brena-Curriculo.pdf';
     link.click();
   }
